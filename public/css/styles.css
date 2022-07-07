@@ -74,6 +74,7 @@ button {
 }
 
 input[type="text"] {
+  color: #ffff;
   text-align: center;
   height: 60px;
   top: 10px;
