@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
@@ -12,7 +13,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.set('view engine','ejs');
 app.use(express.static("public"));
 
-mongoose.connect(process.env.DB_URL);
+mongoose.connect(process.env.URL);
 
 const liItemtSchema = new mongoose.Schema({
     itemName:String
